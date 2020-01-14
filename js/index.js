@@ -120,7 +120,7 @@ newAnchorBack.setAttribute("href", "#");
 
 theNav.append(newAnchorBack);
 
-//task 3 here
+//task 3 color here
 const allNavText = document.querySelectorAll("a");
 
 allNavText.forEach(function(colorChange) {
