@@ -103,3 +103,26 @@ cPText[2].textContent = siteContent.contact.email;
 //footer here
 const footerPText = document.querySelector("footer p");
 footerPText.textContent = siteContent.footer.copyright;
+
+//prepend here
+const theNav = document.querySelector("nav");
+
+const newAnchorFront = document.createElement("a");
+newAnchorFront.textContent = "Sup!";
+newAnchorFront.setAttribute("href", "#");
+
+theNav.prepend(newAnchorFront);
+
+//append here
+const newAnchorBack = document.createElement("a");
+newAnchorBack.textContent = "Dope!";
+newAnchorBack.setAttribute("href", "#");
+
+theNav.append(newAnchorBack);
+
+//task 3 here
+const allNavText = document.querySelectorAll("a");
+
+allNavText.forEach(function(colorChange) {
+  colorChange.style.color = "green";
+});
